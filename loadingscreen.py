@@ -1,12 +1,28 @@
+import os
 import time
 
-print("Loading...")
+os.system("")  # lets Windows terminals understand the cursor-moving codes below
 
-for i in range(21):
-    bar = "█" * i + "-" * (20 - i)
+WIDTH = 20
+
+print("Loading...")
+print()
+
+for i in range(WIDTH + 1):
+    filled = "█" * i
+    empty = "░" * (WIDTH - i)
     percent = i * 5
-    print("\r[" + bar + "] " + str(percent) + "%", end="")
+
+    print("    ┌" + "─" * WIDTH + "┐")
+    print("   ╱" + " " * WIDTH + "╱│")
+    print("  ┌" + "─" * WIDTH + "┐ │")
+    print("  │" + filled + empty + "│ │")
+    print("  └" + "─" * WIDTH + "┘╱")
+    print("   " + str(percent) + "%")
+
+    if i < WIDTH:
+        print("\033[6A", end="")  # move the cursor up 6 lines to redraw
     time.sleep(0.15)
 
 print()
-print("Done! Welcome!")
+print("Welcome!")
