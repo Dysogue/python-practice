@@ -1,1 +1,1 @@
-# python-practice
+This is just used for practicing python.
