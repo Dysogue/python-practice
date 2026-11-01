@@ -1,0 +1,12 @@
+{
+  "name": "python-practice",
+  "owner": "Dysogue",
+  "language": "Python",
+  "version": 1,
+  "learning": ["Python", "Git", "Networking"],
+  "finished": {
+    "calculator": true,
+    "loading_screen": true,
+    "chatbot": false
+  }
+}
