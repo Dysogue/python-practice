@@ -1,7 +1,11 @@
 a = float(input("First number: "))
 b = float(input("Second number: "))
+
 print("Sum:", a + b)
 print("Difference:", a - b)
 print("Product:", a * b)
 print("Quotient:", a / b)
 print("Square of first:", a * a)
+print("First to the power of second:", a ** b)
+print("Remainder:", a % b)
+print("Average:", (a + b) / 2)
